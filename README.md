@@ -23,6 +23,5 @@ the bars move and change color to show comparisons and swaps in real-time.
    - **Time Complexity:** O(n log n) average
    - **Space Complexity:** O(log n)
 
----
 
-## 🧾 Pseudo-code (for Bubble Sort)
+
