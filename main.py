@@ -6,9 +6,6 @@ from tkinter import ttk
 import random
 import time
 
-# ------------------------------
-# Sorting Algorithms
-# ------------------------------
 
 def bubble_sort(data, draw_data, delay):
     n = len(data)
@@ -51,9 +48,6 @@ def partition(data, low, high, draw_data, delay):
     data[i + 1], data[high] = data[high], data[i + 1]
     return i + 1
 
-# ------------------------------
-# Visualization Function
-# ------------------------------
 
 def draw_data(data, color_array):
     canvas.delete("all")
@@ -85,9 +79,7 @@ def draw_data(data, color_array):
 
     root.update_idletasks()
 
-# ------------------------------
-# Control Functions
-# ------------------------------
+
 
 def generate_data():
     global data
@@ -149,3 +141,4 @@ tk.Button(UI_frame, text="Generate", command=generate_data, bg="lightblue").grid
 tk.Button(UI_frame, text="Start", command=start_sort, bg="lightgreen").grid(row=1, column=3, padx=5, pady=10)
 
 root.mainloop()
+
